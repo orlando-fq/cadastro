@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>
+        Cadastro e Pesquisa
+    </title>
+
+</head>
+
+<body>
+    <h1>Cadastro de aluno</h1>
+
+
+    <form id="form">
+
+
+        <div class="form-control">
+            <label for="nome" id="label-nome">
+                Nome
+            </label>
+
+
+            <input type="texto" id="name" placeholder="Nome completo" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+
+            <input type="email" id="email" placeholder="Digite seu e-mail" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-idade">
+                Idade
+            </label>
+
+
+            <input type="text" id="idade" placeholder="Digite sua idade" />
+        </div>
+
+        <div class="form-control">
+            <label for="nivel" id="label-nivel">
+                Qual seu nível de conhecimento?
+            </label>
+
+
+            <select name="role" id="role">
+                <option value="estudante">Estudante</option>
+                <option value="estagiario">Estagiário</option>
+                <option value="profissional">
+                    Profissional
+                </option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Pretende seguir o curso até o final?
+            </label>
+
+
+            <label for="opcao1">
+                <input type="radio" id="opcao1" name="opcao">Sim</input>
+            </label>
+            <label for="opcao2">
+                <input type="radio" id="opcao2" name="opcao">Não</input>
+            </label>
+            <label for="opcao3">
+                <input type="radio" id="opcao3" name="opcao">Talvez</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Seleciona as linguagens e frameworks que tem interesse.
+                <small>(Mais de uma caixa pode ser selecionada)</small>
+            </label>
+
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Angular</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Django</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Spring</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Todos acima</input></label>
+        </div>
+
+        <div class="form-control">
+            <label for="comentario">
+                Faça um breve descrição de você.
+            </label>
+
+
+            <textarea name="comentario" id="comentario" placeholder="Digite aqui">
+            </textarea>
+        </div>
+
+
+        <button type="enviar" value="enviar">Enviar</button>
+    </form>
+</body>
+
+</html>
